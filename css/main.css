@@ -202,16 +202,14 @@ header {
 		margin-top: 25px;
 	}
 
-	@media only screen and (max-width: 410px) {
-		.primary-btn {
-			width: 110px;
-		}
+@media only screen and (max-width: 410px) {
+	.primary-btn {
+		width: 110px;
 	}
+}
 
-	@media only screen and (max-width: 345px) {
-		.primary-btn {
-			width: 100px;
-		}
+@media only screen and (max-width: 345px) {
+	.primary-btn {
+		width: 100px;
 	}
-
 }
