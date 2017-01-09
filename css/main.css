@@ -182,7 +182,7 @@ header {
 		text-align: center;
 		font-size: 9px;
 		height: 40px;
-		width: 140px;
+		width: 135px;
 		float: left;
 	}
 
@@ -204,11 +204,11 @@ header {
 
 	@media only screen and (max-width: 410px) {
 		.primary-btn {
-			width: 120px;
+			width: 110px;
 		}
 	}
 
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 345px) {
 		.primary-btn {
 			width: 100px;
 		}
