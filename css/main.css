@@ -36,6 +36,7 @@ header {
 	justify-content: center;
 	width: 100%;
 	padding: 1em;
+	font-size: 18px;
 }
 
 .header-span:first-child {
@@ -59,10 +60,6 @@ header {
 }
 
 #text {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	position: absolute;
 	top: 0;
 	margin-top: 2.5em;
@@ -117,4 +114,112 @@ header {
 
 .typed-cursor{
    display: none;
+}
+
+@media only screen and (max-device-width: 1024px) {
+
+	#game-wrapper {
+		height: 55%;
+		width: 65%;
+	}
+
+	#text {
+		font-size:14px;
+	}
+
+}
+
+@media only screen and (max-device-width: 768px) {
+
+	header {
+		font-size: 16px;
+	}
+
+	#text {
+		font-size:13px;
+	}
+
+	#game-wrapper {
+		height: 65%;
+		width: 75%;
+	}
+
+	.primary-btn {
+		font-size: 10px;
+	}
+
+}
+
+@media only screen and (max-device-width: 600px) {
+
+	header {
+		font-size: 14px;
+	}
+
+	#text {
+		font-size:12px;
+	}
+
+	.primary-btn {
+		font-size: 9px;
+	}
+
+}
+
+@media only screen and (max-device-width: 500px) {
+
+	header {
+		font-size: 12px;
+	}
+
+	#text {
+		font-size:11px;
+	}
+
+	#game-wrapper {
+		height: 75%;
+		width: 75%;
+	}
+
+	#buttons {
+		margin-bottom: 1.5em;
+		display: block;
+	}
+
+	.primary-btn {
+		text-align: center;
+		font-size: 9px;
+		height: 40px;
+		width: 150px;
+		float: left;
+	}
+
+	.primary-btn:nth-child(3) {
+		clear: left;
+	}
+
+	.primary-btn:nth-child(3), .primary-btn:nth-child(4) {
+		margin-top: 20px;
+	}
+
+	#buttons .primary-btn:nth-child(1):active, #buttons .primary-btn:nth-child(2):active {
+		margin-top: 5px;
+	}
+
+	#buttons .primary-btn:nth-child(3):active, #buttons .primary-btn:nth-child(4):active {
+		margin-top: 25px;
+	}
+
+	@media only screen and (max-device-width: 410px) {
+		.primary-btn {
+			width: 130px;
+		}
+	}
+
+	@media only screen and (max-device-width: 410px) {
+		.primary-btn {
+			width: 120px;
+		}
+	}
+
 }
