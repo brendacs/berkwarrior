@@ -116,7 +116,7 @@ header {
    display: none;
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
 	#game-wrapper {
 		height: 55%;
@@ -129,7 +129,7 @@ header {
 
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
 
 	header {
 		font-size: 16px;
@@ -150,7 +150,7 @@ header {
 
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 	header {
 		font-size: 14px;
@@ -166,7 +166,7 @@ header {
 
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-width: 500px) {
 
 	header {
 		font-size: 12px;
@@ -210,13 +210,13 @@ header {
 		margin-top: 25px;
 	}
 
-	@media only screen and (max-device-width: 410px) {
+	@media only screen and (max-width: 410px) {
 		.primary-btn {
 			width: 130px;
 		}
 	}
 
-	@media only screen and (max-device-width: 410px) {
+	@media only screen and (max-width: 410px) {
 		.primary-btn {
 			width: 120px;
 		}
