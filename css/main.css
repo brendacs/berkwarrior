@@ -212,13 +212,13 @@ header {
 
 	@media only screen and (max-width: 410px) {
 		.primary-btn {
-			width: 130px;
+			width: 120px;
 		}
 	}
 
-	@media only screen and (max-width: 410px) {
+	@media only screen and (max-width: 320px) {
 		.primary-btn {
-			width: 120px;
+			width: 110px;
 		}
 	}
 
