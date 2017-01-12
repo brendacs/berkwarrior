@@ -5,7 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-		<script src="js/main.js" defer></script>
+		<script>
+			// button active state for mobile
+			document.addEventListener('touchstart', function(){}, true)
+		</script>
+		<script src="js/elements.js" defer></script>
+		<script src="js/objects.js" defer></script>
+		<script src="js/inventory.js" defer></script>
+		<script src="js/scenes.js" defer></script>
 	</head>
 
 	<body>
@@ -14,13 +21,15 @@
 		</header>
 
 		<div id="game-wrapper">
-			<div id="text">
+			<div id="story-text">
+			</div>
+			<div id="inventory-text">
 			</div>
 			<div id="buttons">
 				<button type="button" class="primary-btn" id="left">Backtrack</button>
 				<button type="button" class="primary-btn" id="right">Advance</button>
 				<button type="button" class="primary-btn" id="action">Action</button>
-				<button type="button" class="primary-btn" id="inventory">Inventory</button>
+				<button type="button" class="primary-btn" id="inventory">Bookbag</button>
 			</div>
 		</div>
 

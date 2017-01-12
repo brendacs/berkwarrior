@@ -48,7 +48,6 @@ header {
 }
 
 #game-wrapper {
-	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -59,19 +58,36 @@ header {
 	border: 1px solid white;
 }
 
-#text {
+#story-text, #inventory-text {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	width: 90%;
-	height: 80%;
+	height: 999px;
 	overflow: scroll;
-	margin: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 3em;
 	font-size: 12px;
 	line-height: 200%;
 }
 
+#inventory-text {
+	display: none;
+	margin-top: 0em;
+}
 
+#inventory-text h2 {
+	font-size: 14px;
+	color: #fce4a9;
+}
+
+#inventory-text p {
+	padding-bottom: 10px;
+}
+
+#story-text p {
+	padding-bottom: 20px;
+}
 
 #buttons {
 	display: flex;
@@ -114,15 +130,33 @@ header {
 	color: black;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 
 	#game-wrapper {
 		height: 55%;
 		width: 65%;
 	}
 
-	#text {
-		font-size:14px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+	#story-text, #inventory-text {
+		font-size: 13px;
+	}
+
+}
+
+@media only screen and (max-width: 910px) {
+
+	#game-wrapper {
+		height: 55%;
+		width: 70%;
+	}
+
+	.primary-btn {
+		font-size: 11px;
+		width: 130px;
 	}
 
 }
@@ -133,7 +167,7 @@ header {
 		font-size: 16px;
 	}
 
-	#text {
+	#story-text, #inventory-text {
 		font-size:13px;
 	}
 
@@ -144,34 +178,40 @@ header {
 
 	.primary-btn {
 		font-size: 10px;
+		width: 115px;
 	}
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 
 	header {
 		font-size: 14px;
 	}
 
-	#text {
-		font-size:12px;
+	#story-text, #inventory-text {
+		font-size: 12px;
 	}
 
 	.primary-btn {
 		font-size: 9px;
+		width: 100px;
 	}
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 
 	header {
 		font-size: 12px;
 	}
 
-	#text {
-		font-size:11px;
+	#story-text, #inventory-text {
+		font-size: 11px;
+	}
+
+	#inventory-text h2 {
+		font-size: 13px;
 	}
 
 	#game-wrapper {
@@ -187,7 +227,7 @@ header {
 		text-align: center;
 		font-size: 9px;
 		height: 40px;
-		width: 135px;
+		width: 140px;
 		float: left;
 	}
 
@@ -206,15 +246,35 @@ header {
 	#buttons .primary-btn:nth-child(3):active, #buttons .primary-btn:nth-child(4):active {
 		margin-top: 25px;
 	}
+}
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 425px) {
+
+	#story-text, #inventory-text {
+		font-size: 10px;
+	}
+
+	#inventory-text h2 {
+		font-size: 12px;
+	}
+
 	.primary-btn {
-		width: 110px;
+		width: 120px;
 	}
 }
 
-@media only screen and (max-width: 345px) {
+@media only screen and (max-width: 370px) {
+
+	#story-text, #inventory-text {
+		font-size: 10px;
+	}
+
+	#inventory-text h2 {
+		font-size: 11px;
+	}
+
 	.primary-btn {
 		width: 100px;
+		font-size: 8.5px;
 	}
 }
